@@ -12,6 +12,7 @@ TIMEZONE = 'Asia/Jakarta'
 
 DEFAULT_LANG = 'en'
 
+DELETE_OUTPUT_DIRECTORY = False
 OUTPUT_RETENTION = [".git"]
 
 # Feed generation is usually not desired when developing

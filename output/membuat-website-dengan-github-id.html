@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <title>Hazuli Fidastian - Membuat Website dengan Github</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+
+    <link rel="stylesheet" href="./theme/css/main.css" />
+    <link rel="stylesheet" href="./theme/css/pygment.css" />
+
+</head>
+
+<body id="index" class="home">
+
+    <div class="container">
+        <header id="main-header">
+            <h1>Hazuli Fidastian</h1>
+
+            <nav><ul>
+                <li><a href="/">Beranda</a></li>
+                <li><a href="/projects-id.html">Proyek</a></li>
+                <li><a href="/stories-id.html">Stori</a></li>
+                <li><a href="/contact-id.html">Kontak</a></li>
+            </ul></nav>
+        </header><!-- /#banner -->
+
+<section>
+    <article>
+        <header>
+            <h2 class="title">Membuat Website dengan Github</h2>
+        </header>
+
+        <div class="post-content">
+            <p>
+                <small>
+                    Rab 28 Juni 2017 -
+                        <a class="url fn" href="./author/hazuli-fidastian.html">Hazuli Fidastian</a>
+                </small>
+            </p>
+
+            <p>Membuat website sederhana yang menampilkan profil pribadi atau organisasi bisa
+dilakukan dengan menggunakan Github. Kita tidak perlu menyewa jasa penyedia hosting
+berbayar. Cukup dengan membuat akun Github fasilitas “hosting” web bisa digunakan
+secara gratis.</p>
+<p>Github bagi programmer pasti sudah sangat familiar. Penyedia jasa penyimpanan source
+code yang menggunakan aplikasi pengontrol versi git. Dengan git, aplikasi yang dibuat
+bisa dilacak perubahannya. Dan dengan adanya Github, aplikasi tidak hanya tersimpan
+dikomputer lokal saja, namun juga tersedia dicloud. Selain itu Github juga memberikan
+kemudahan bagi pengembang aplikasi untuk saling berkolaborasi.</p>
+<p>Kita lanjut langkah demi langkah membuat website perdana menggunakan Github. Jika
+belum memiliki akun Github, buat terlebih dahulu akunnya disini. Nama akun yang dibuat,
+akan menjadi nama websitenya. Misalnya nama akun adalah hazulifidastian, nama
+websitenya akan menjadi hazulifidastian.github.io.</p>
+<p>Jika akun sudah tersedia, login terlebih dahulu. Lanjutkan dengan membuat repository
+baru dengan nama hazulifidastian.github.io (nama repository sama dengan nama akun).
+Repository adalah tempat rekam perubahan source code akan disimpan. Misalnya Saya
+membuat aplikasi perpustakaan, kemudian saya membuat repository dengan nama
+perpustakaan. Rekam perubahan source code aplikasi perpustakaan Saya akan tersimpan
+didalam repository ini. Karena sekarang kita akan membuat website, source code website
+yang akan tersimpan di repository ini. Untuk membuat repository baru, cari tombol
+New repository.</p>
+<p>Lanjutkan dengan melakukan clone (duplikasi) repository baru dibuat ke repository
+dikomputer lokal. Sebelumnya install aplikasi git di komputer lokal. Jalankan
+Terminal atau Command line.</p>
+<div class="highlight"><pre><span></span>$ git clone https://github.com/hazulifidastian/hazulifidastian.github.io.git
+$ <span class="nb">cd</span> hazulifidastian.github.io
+$ touch index.html
+$ <span class="nb">echo</span> <span class="s2">&quot;Halaman Website dengan Github&quot;</span> &gt;&gt; index.html
+</pre></div>
+<p>Clone akan menduplikasi repository git pada Github ke komputer lokal. Perintah git
+clone akan menghasilkan folder hazulifidastian.github.io. Didalam folder tersebut,
+buat file index.html. Isikan dengan teks “Halaman Website dengan Github”.</p>
+<p>Catatan, jika menggunakan OS Windows, perintah touch dan echo tidak bisa digunakan.
+Sebagai gantinya, gunakan aplikasi Notepad untuk membuat file index.html didalam
+folder tersebut.</p>
+<p>Langkah selanjutnya, adalah menyimpan (merekam) perubahan pada repository git lokal,
+dan kemudian mengirimkan kembali ke Github.</p>
+<div class="highlight"><pre><span></span>$ git add -A
+$ git commit -m <span class="s2">&quot;Initial commit&quot;</span>
+</pre></div>
+<p>Perintah git add -A untuk memasukkan semua source code yang berubah. git commit untuk
+merekam perubahan, dengan pesan “Initial commit”. Pesan bisa dirubah, misalnya “kode
+pertama web saya”. Sekarang kirimkan perubahan ke Github,</p>
+<div class="highlight"><pre><span></span>$ git push origin master
+</pre></div>
+<p>Git akan meminta username dan password Github. Jika proses pengiriman selesai, buka
+halaman web hazulifidastian.github.io. Akan terlihat teks, “Halaman Website
+dengan Github”.</p>
+<p>Tutorial lanjutan adalah menggunakan custom domain untuk website Github.</p>
+
+
+            <footer>
+                <p>
+                    <small><p>tags: <a href="./tag/github.html">github</a> <a href="./tag/website.html">website</a> </p></small>
+                </p>
+            </footer>
+        </div>
+
+    </article>
+</section>
+
+        <footer id="main-footer">
+            Template by Hazuli Fidastian<br>
+            This site powered by <a href="http://getpelican.com/">Pelican</a>.
+        </footer>
+    </div>
+
+</body>
+</html>
