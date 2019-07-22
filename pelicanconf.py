@@ -12,7 +12,7 @@ TIMEZONE = 'Asia/Jakarta'
 
 DEFAULT_LANG = 'en'
 
-DELETE_OUTPUT_DIRECTORY = False
+DELETE_OUTPUT_DIRECTORY = True
 OUTPUT_RETENTION = [".git"]
 
 # Feed generation is usually not desired when developing
@@ -34,16 +34,16 @@ AUTHOR_FEED_RSS = None
 
 DEFAULT_PAGINATION = 10
 
-STATIC_PATHS = ['images']
+STATIC_PATHS = ['images', 'documents']
 
 PORT = 8080
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+#  RELATIVE_URLS = True
 
 THEME = 'theme'
 
-MENUITEMS = (('Beranda', '/'), ('Proyek', '/projects-id.html'), ('Stori', '/stories-id.html'),
+MENUITEMS = (('Beranda', '/'), ('Stori', '/stories-id.html'),
              ('Kontak', '/contact-id.html'))
 
 DISPLAY_PAGES_ON_MENU = False

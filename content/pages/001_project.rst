@@ -4,6 +4,7 @@ Proyek
 
 :save_as: projects-id.html
 :lang: id
+:status: draft
 
 Proyek
 ======

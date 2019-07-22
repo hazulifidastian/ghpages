@@ -1,6 +1,6 @@
 body {
-    font-size: 1.87em;
-    color: #404c74;
+    font-family: 'Imprima';
+    font-size: 1.97em;
 }
 
 .container {
@@ -39,20 +39,13 @@ h4 {
     margin-top: 1em;
 }
 
-/* Larger than tablet */
-@media (min-width: 750px) {
-    body {
-        font-size: 1.97em;
-    }
-}
-
 /* Larger than mobile screen */
 @media (min-width: 40.0rem) {  }
 
 /* Larger than tablet screen */
 @media (min-width: 80.0rem) { 
     body {
-        font-size: 1.97em;
+        font-size: 2.1em;
     }
 }
 
@@ -136,7 +129,7 @@ pre {
     color: #606c76;
     background: #f4f5f6;
     border-radius: .4rem;
-    font-size: 1em;
+    font-size: 1.9em;
     margin: 0 .2rem;
     margin-bottom: 25px;
     whitespace: pre;
@@ -153,4 +146,19 @@ table.footnote {
 
 table.footnote td {
     border: none;
+}
+
+body.home #main-header {
+    padding-top: 0;
+}
+
+body.home #main-footer {
+    padding-bottom: 0;
+}
+
+body.home {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
 }
