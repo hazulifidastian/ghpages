@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Hazuli Fidastian'
-SITENAME = 'Hazuli Fidastian'
+SITENAME = 'hazulifidastian.id'
 SITEURL = ''
 
 PATH = 'content'
@@ -43,8 +43,11 @@ PORT = 8080
 
 THEME = 'theme'
 
-MENUITEMS = (('Beranda', '/'), ('Stori', '/stories-id.html'),
-             ('Kontak', '/contact-id.html'))
+MENUITEMS = (
+    ('Beranda', '/'),
+    ('Stori', '/stories-id.html'),
+    ('Kontak', '/contact-id.html'),
+)
 
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
